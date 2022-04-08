@@ -1,0 +1,38 @@
+{
+  "name": "webhawk",
+  "version": "1.0.0",
+  "description": "Check your website status in the command line.",
+  "main": "./index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=12.x"
+  },
+  "bin": {
+    "webhawk": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "mahafuz/webhawk",
+  "keywords": [
+    "web",
+    "status",
+    "check"
+  ],
+  "author": {
+    "name": "Mahafuz",
+    "email": "m.mahfuz.me@gmail.com",
+    "url": "https://twitter.com/mahafuzDevs"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mahafuz/webhawk/issues"
+  },
+  "homepage": "https://github.com/mahafuz/webhawk#readme",
+  "dependencies": {
+    "arg": "^5.0.1",
+    "inquirer": "^8.2.2",
+    "node-fetch": "^3.2.3",
+    "open": "^8.4.0"
+  }
+}
