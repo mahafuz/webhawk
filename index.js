@@ -5,6 +5,10 @@ import fetch from 'node-fetch' ;
 import open from 'open';
 import arg from 'arg';
 import inquirer from 'inquirer';
+import Ora from 'ora';
+
+const spinner = Ora( 'Connecting to the server...' );
+const website = process.argv[2]; 
 
 const args = () => {
     const args = arg(
@@ -52,40 +56,39 @@ const launch = async(result) => {
         }
 }
 
-const website = process.argv[2]; 
-
 const hawk = async( name ) => {
-
+    spinner.start();
     const response = await fetch(`https://isitup.org/${name}.json`);
-
     const info = response.status === 400 || response.status === 502 ? {
         response_code: 400,
         message: 'invalid url'
     } : response.json();
 
-    const { response_code } = await info;
+    spinner.stop();
 
-    switch (response_code) {
+    const result = await info;
+
+    switch (result.response_code) {
         case 400:
             console.log('\x1b[31m%s\x1b[0m', 'invalid url');
             break;
         case 200:
             console.log('\x1b[32m%s\x1b[0m', 'website is up and running');
-            launch(info);
+            launch(result);
             break;
         case 301:
             console.log('\x1b[32m%s\x1b[0m', 'website has been moved permanently but is up');
-            launch(info);
+            launch(result);
             console.log('\x1b[34m%s\x1b[0m', 'website has been moved permanently but is up');
-            launch(info);
+            launch(result);
             break;
         case 302:
             console.log('\x1b[34m%s\x1b[0m', 'temporary redirect, website is up');
-            launch(info);
+            launch(result);
             break;
         case 403:
             console.log('\x1b[33m%s\x1b[0m', 'information not found');
-            launch(info);
+            launch(result);
             break;
         default:
             console.log('\x1b[31m%s\x1b[0m', 'website is down')
