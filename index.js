@@ -57,7 +57,8 @@ const website = process.argv[2];
 const hawk = async( name ) => {
 
     const response = await fetch(`https://isitup.org/${name}.json`);
-    const info = response.status === 400 ? {
+
+    const info = response.status === 400 || response.status === 502 ? {
         response_code: 400,
         message: 'invalid url'
     } : response.json();
