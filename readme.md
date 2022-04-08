@@ -49,6 +49,6 @@ webhawk https://google.com
 
 <div align="left">
     <p><a href="https://github.com/mahafuz"><img alt="GitHub @mahafuz" align="center" src="https://img.shields.io/badge/GITHUB-gray.svg?colorB=6cc644&style=flat" /></a>&nbsp;<small><strong>(follow)</strong> To stay up to date on free & open-source software</small></p>
-    <p><a href="https://twitter.com/mahafuzDevs/"><img alt="Twitter @mahafuzDevs" align="center" src="https://img.shields.io/badge/TWITTER-gray.svg?colorB=1da1f2&style=flat" /></a>&nbsp;<small><strong>(follow)</strong> To get #OneDevMinute daily hot tips & trolls</small></p>
-    <p><a href="https://www.linkedin.com/in/mahafuzur-rahaman/"><img alt="LinkedIn @mahafuzur Rahaman" align="center" src="https://img.shields.io/badge/LINKEDIN-gray.svg?colorB=0077b5&style=flat" /></a>&nbsp;<small><strong>(connect)</strong> On the LinkedIn profile y'all</small></p>
+    <p><a href="https://twitter.com/mahafuzDevs/"><img alt="Twitter @mahafuzDevs" align="center" src="https://img.shields.io/badge/TWITTER-gray.svg?colorB=1da1f2&style=flat" /></a>&nbsp;<small><strong>(follow)</strong></small></p>
+    <p><a href="https://www.linkedin.com/in/mahafuzur-rahaman/"><img alt="LinkedIn @mahafuzur Rahaman" align="center" src="https://img.shields.io/badge/LINKEDIN-gray.svg?colorB=0077b5&style=flat" /></a>&nbsp;<small><strong>(connect)</strong></small></p>
 </div>
