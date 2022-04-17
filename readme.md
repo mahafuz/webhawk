@@ -2,7 +2,7 @@
 
 [![Follow @mahafuzDevs on Twitter](https://img.shields.io/badge/FOLLOW%20@mahafuzDevs%20%E2%86%92-gray.svg?colorA=81F096&colorB=81F096&style=flat)](https://twitter.com/mahafuzDevs/)
 
-> CLI to check If a webiste live or not in the command line.
+> CLI to check if a website live or not in the command line.
 
 <br>
 
@@ -30,7 +30,7 @@ webhawk google.com
 webhawk https://google.com
 ```
 
-[![📟](./.github/show.png)](./../../)
+[![📟](https://i.imgur.com/BGMbIy8.png)](./../../)
 
 <br>
 
